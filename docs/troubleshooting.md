@@ -18,3 +18,4 @@
 ## Test failures
 - Install test extras with `pip install -e .[test]`.
 - Ensure `pytest` discovers `src` via project pytest config.
+See README for commands. This document details troubleshooting for UGC 9024 and NGC 6902 workflows.

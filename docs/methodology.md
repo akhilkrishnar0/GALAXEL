@@ -132,3 +132,6 @@ Recommended QA products:
 - Bradley et al. 2023, `reproject` documentation and package methods.
 - Photutils documentation and source extraction API.
 
+# Methodology
+
+See README for commands. This document details methodology for UGC 9024 and NGC 6902 workflows.

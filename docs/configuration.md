@@ -17,3 +17,6 @@ Tuning guidance:
 - Increase `masking.nsigma` for shallow/noisy fields to reduce false detections.
 - Increase `protect_radius_arcsec` for large angular-size galaxies.
 - Set `grid_cell_size_arcsec` >= target PSF FWHM for conservative resolved SED analysis.
+# Configuration
+
+See README for commands. This document details configuration for UGC 9024 and NGC 6902 workflows.

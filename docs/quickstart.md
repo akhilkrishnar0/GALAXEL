@@ -22,3 +22,4 @@ galflux run-all --input data/examples/targets_example.csv --config configs/examp
 
 ## 5) Validate outputs
 Inspect `outputs/*/provenance` and `outputs/*/figures` for QA.
+See README for commands. This document details quickstart for UGC 9024 and NGC 6902 workflows.

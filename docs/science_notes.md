@@ -17,3 +17,6 @@
 - Forced-photometry style masking validation with external star catalogs (e.g., Gaia).
 - Monte-Carlo uncertainty propagation through reprojection+convolution.
 - End-to-end aperture-based closure tests on calibration fields.
+# Science_notes
+
+See README for commands. This document details science_notes for UGC 9024 and NGC 6902 workflows.

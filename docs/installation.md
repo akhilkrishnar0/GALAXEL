@@ -24,3 +24,4 @@ pytest -q
 ```
 
 If dependency installation fails in restricted environments, preinstall wheels from a trusted mirror and then run editable install.
+See README for commands. This document details installation for UGC 9024 and NGC 6902 workflows.

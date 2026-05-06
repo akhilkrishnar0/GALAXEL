@@ -48,21 +48,49 @@ python -m pip install -e .
 ## Quickstart commands
 
 Resolve example targets:
+Bundled demo targets: **UGC 9024** and **NGC 6902**.
+
+## Current implementation status
+Fully implemented in this repo:
+- package install + CLI + YAML/JSON config
+- target-table parsing and SIMBAD-assisted coordinate resolution
+- GALEX query/product filtering bookkeeping helpers
+- exposure-weighted stacking utilities with reprojection
+- segmentation+morphology masking with galaxy-center protection
+- PSF smoothing + approximate uncertainty convolution
+- grid/cell photometry + CIGALE-format export helpers
+- deterministic offline tests with synthetic data
+
+Approximate / future improvements:
+- mission-grade GALEX product-type heuristics for all release variants
+- full survey-specific DECaLS uncertainty ingest for all layers
+- optional external star-catalog cross-matching
+- expanded integration tests requiring remote data access
+
+## Install
+```bash
+python -m pip install -e .[test]
+```
+
+## Quickstart
 ```bash
 galflux resolve-targets --input data/examples/targets_example.csv --config configs/default.yaml
 ```
 
 Single-target style run for UGC 9024 settings:
+UGC 9024:
 ```bash
 galflux run-all --input data/examples/targets_with_coords_example.csv --config configs/example_single_ugc9024.yaml
 ```
 
 Single-target style run for NGC 6902 settings:
+NGC 6902:
 ```bash
 galflux run-all --input data/examples/targets_with_coords_example.csv --config configs/example_single_ngc6902.yaml
 ```
 
 Batch run:
+Batch (UGC 9024 + NGC 6902):
 ```bash
 galflux run-all --input data/examples/targets_example.csv --config configs/example_batch.yaml
 ```
@@ -101,3 +129,5 @@ It demonstrates:
 ## Acknowledgment / references
 
 See `docs/methodology.md` for method references (GALEX mission calibration paper, Legacy Surveys data paper, and relevant software ecosystem citations).
+## Output layout
+`outputs/<galaxy_id>/{raw,intermediate,masks,psfmatched,reproj,photometry,figures,logs,provenance}`

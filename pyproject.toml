@@ -4,14 +4,26 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "galaxy-flux-pipeline"
-version = "0.1.0"
+version = "0.2.0"
 description = "Resolved UV+optical flux pipeline for GALEX+DECaLS"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{name="GALAXEL Team"}]
 dependencies = [
-  "numpy","scipy","pandas","pyyaml","astropy","astroquery","photutils","reproject","matplotlib","requests"
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "pandas>=2.0",
+  "pyyaml>=6.0",
+  "astropy>=6.0",
+  "astroquery>=0.4.8",
+  "photutils>=1.11",
+  "reproject>=0.13",
+  "matplotlib>=3.8",
+  "requests>=2.31",
 ]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0", "pytest-cov>=5.0"]
 
 [project.scripts]
 galflux = "galaxy_flux_pipeline.cli:main"
@@ -21,3 +33,7 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -5,6 +5,7 @@ import pandas as pd
 
 REQ_COLS = ["galaxy_name", "ra", "dec", "distance_mpc"]
 
+
 def read_targets(path: str | Path) -> pd.DataFrame:
     df = pd.read_csv(path)
     for c in REQ_COLS:
@@ -12,15 +13,23 @@ def read_targets(path: str | Path) -> pd.DataFrame:
             raise ValueError(f"Missing required column: {c}")
     return df
 
+
 def ensure_dirs(base: Path) -> dict[str, Path]:
-    dirs = {k: base/k for k in ["raw","intermediate","masks","psfmatched","reproj","photometry","figures","logs","provenance"]}
+    dirs = {k: base / k for k in ["raw", "intermediate", "masks", "psfmatched", "reproj", "photometry", "figures", "logs", "provenance"]}
     for d in dirs.values():
         d.mkdir(parents=True, exist_ok=True)
     return dirs
 
+
 def sha256sum(path: Path) -> str:
-    h=hashlib.sha256()
+    h = hashlib.sha256()
     with path.open("rb") as f:
         for chunk in iter(lambda: f.read(8192), b""):
             h.update(chunk)
     return h.hexdigest()
+
+
+def sanitize_galaxy_id(name: str | float, fallback: str = "target") -> str:
+    if not isinstance(name, str) or not name.strip():
+        return fallback
+    return "_".join(name.strip().split()).replace("/", "_")

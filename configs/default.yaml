@@ -1,0 +1,14 @@
+output_root: outputs
+crop_size_arcsec: 240.0
+decals_layer: ls-dr10
+decals_pixscale: 0.25
+galex_search_radius: 0.2
+target_psf_fwhm_arcsec: 5.3
+grid_cell_size_arcsec: 6.0
+random_aperture_count: 200
+logging_level: INFO
+overwrite: false
+masking:
+  nsigma: 2.5
+  npixels: 8
+  protect_radius_arcsec: 45.0

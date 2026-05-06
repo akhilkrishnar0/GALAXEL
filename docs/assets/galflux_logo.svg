@@ -1,0 +1,12 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 320'>
+  <rect width='800' height='320' fill='#0b1220'/>
+  <circle cx='130' cy='150' r='88' fill='none' stroke='#4fd1c5' stroke-width='10' opacity='0.45'/>
+  <circle cx='130' cy='150' r='62' fill='none' stroke='#63b3ed' stroke-width='10' opacity='0.55'/>
+  <circle cx='130' cy='150' r='36' fill='none' stroke='#f6ad55' stroke-width='10' opacity='0.70'/>
+  <circle cx='175' cy='110' r='9' fill='#f56565'/>
+  <circle cx='88' cy='190' r='7' fill='#68d391'/>
+  <circle cx='160' cy='205' r='6' fill='#faf089'/>
+  <text x='250' y='120' fill='white' font-size='54' font-family='Arial, Helvetica, sans-serif' font-weight='700'>GALFLUX</text>
+  <text x='250' y='162' fill='#cbd5e0' font-size='24' font-family='Arial, Helvetica, sans-serif'>Resolved UV+Optical Galaxy Flux Pipeline</text>
+  <text x='250' y='198' fill='#a0aec0' font-size='20' font-family='Arial, Helvetica, sans-serif'>GALEX FUV/NUV × DECaLS g/r/z</text>
+</svg>

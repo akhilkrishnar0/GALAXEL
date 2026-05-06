@@ -1,0 +1,16 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 760'>
+  <rect width='1200' height='760' fill='#ffffff'/>
+  <text x='600' y='48' text-anchor='middle' font-size='34' font-family='Arial' fill='#111827'>GALFLUX Example QA Panels (Illustrative)</text>
+  <g font-family='Arial' font-size='22' fill='#111827'>
+    <text x='170' y='100'>GALEX FUV</text><text x='560' y='100'>GALEX NUV</text><text x='950' y='100'>DECaLS r</text>
+    <text x='185' y='430'>Mask</text><text x='530' y='430'>PSF-matched</text><text x='920' y='430'>FUV-NUV</text>
+  </g>
+  <defs>
+    <linearGradient id='magma' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='#1f1048'/><stop offset='50%' stop-color='#b63679'/><stop offset='100%' stop-color='#f6d746'/></linearGradient>
+    <linearGradient id='vir' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='#440154'/><stop offset='100%' stop-color='#29af7f'/></linearGradient>
+    <linearGradient id='cool' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='#3b82f6'/><stop offset='50%' stop-color='#f8fafc'/><stop offset='100%' stop-color='#ef4444'/></linearGradient>
+  </defs>
+  <rect x='70' y='120' width='280' height='240' fill='url(#magma)'/><rect x='460' y='120' width='280' height='240' fill='url(#magma)'/><rect x='850' y='120' width='280' height='240' fill='url(#vir)'/>
+  <rect x='70' y='450' width='280' height='240' fill='#e5e7eb'/><circle cx='180' cy='520' r='24' fill='#111827'/><circle cx='290' cy='620' r='20' fill='#111827'/>
+  <rect x='460' y='450' width='280' height='240' fill='url(#magma)'/><rect x='850' y='450' width='280' height='240' fill='url(#cool)'/>
+</svg>

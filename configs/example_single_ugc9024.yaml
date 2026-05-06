@@ -1,0 +1,3 @@
+output_root: outputs
+crop_size_arcsec: 300
+grid_cell_size_arcsec: 6.0

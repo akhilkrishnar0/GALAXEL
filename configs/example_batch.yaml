@@ -1,0 +1,3 @@
+crop_size_arcsec: 240
+grid_cell_size_arcsec: 6.0
+random_aperture_count: 300

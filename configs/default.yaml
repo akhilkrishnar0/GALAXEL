@@ -1,0 +1,12 @@
+crop_size_arcsec: 240
+decals_layer: ls-dr10
+decals_pixscale: 0.25
+galex_search_radius: 0.2
+target_psf_fwhm_arcsec: 5.3
+grid_cell_size_arcsec: 6.0
+masking_threshold_sigma: 2.5
+galaxy_protection_radius_arcsec: 20
+random_aperture_count: 200
+output_units: mJy
+logging_level: INFO
+overwrite: false

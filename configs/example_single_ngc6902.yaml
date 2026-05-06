@@ -1,0 +1,3 @@
+crop_size_arcsec: 240
+grid_cell_size_arcsec: 5.3
+overwrite: true

@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "galaxy-flux-pipeline"
+version = "0.1.0"
+description = "Resolved UV+optical galaxy flux pipeline for GALEX+DECaLS"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "scipy",
+  "pandas",
+  "pyyaml",
+  "astropy",
+  "astroquery",
+  "photutils",
+  "reproject",
+  "matplotlib",
+  "requests",
+]
+
+[project.scripts]
+galflux = "galaxy_flux_pipeline.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"

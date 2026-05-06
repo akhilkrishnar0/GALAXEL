@@ -1,0 +1,11 @@
+numpy
+scipy
+pandas
+pyyaml
+astropy
+astroquery
+photutils
+reproject
+matplotlib
+requests
+pytest

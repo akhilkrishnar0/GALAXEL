@@ -18,6 +18,7 @@ This repository is designed for reproducible, WCS-aware resolved photometry work
 - Installable Python package with CLI entry points.
 - Config-driven target handling and SIMBAD-assisted coordinate resolution.
 - GALEX product query/filter bookkeeping utilities.
+- Deterministic synthetic QA processing path for offline reproducible smoke runs.
 - Exposure-weighted stacking utilities.
 - Segmentation+morphology masking with galaxy-center protection.
 - PSF matching with explicit approximate uncertainty propagation.
@@ -70,6 +71,8 @@ Batch run:
 ```bash
 galflux run-all --input data/examples/targets_example.csv --config configs/example_batch.yaml
 ```
+
+> Note: current CLI `run-all` executes resolve + synthetic QA processing (documented approximation) so tests and examples are deterministic offline.
 
 ---
 
